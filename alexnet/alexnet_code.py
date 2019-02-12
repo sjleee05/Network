@@ -79,6 +79,7 @@ def alexnet(pretrained=False, **kwargs):
     Args:
         pretrained (bool): If True, returns a model pre-trained on ImageNet
     """
+    #TODO: 이미지파일이 커서, 난수 생성해서 확인하도록 소스코드 변경해야함
     model = AlexNet(**kwargs)
     if pretrained:
         model_path = 'model_list/alexnet.pth.tar'
